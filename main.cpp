@@ -8,24 +8,17 @@
 #include <cstring>
 
 using namespace std;
-/*void split(deque<string> &tokens,const string& s)
+void split(deque<string> &tokens,const string& s)
 {
     std::stringstream ss(s);
     string word;
     while (ss >> word) {
         tokens.push_back(word);
     }
-}*/
-void split(stack<string> &tokens,const string& s)
-{
-    std::stringstream ss(s);
-    string word;
-    while (ss >> word) {
-        tokens.push(word);
-    }
 }
 
-/*void exercise_1_deque_list(){
+
+void exercise_1_deque_list(){
     string a;
     deque<string> dq;
     list<string> liste;
@@ -39,7 +32,7 @@ void split(stack<string> &tokens,const string& s)
         cout << it << endl;
     }
     cout << endl;
-}*/
+}
 
 int main([[maybe_unused]] int argc, [[maybe_unused]] char const* argv[])
 {
@@ -76,13 +69,7 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char const* argv[])
         cout << pile.top() << endl;
         pile.pop();
     }
-    /*while (!pile.empty()){
 
-        btab[i] =pile.top();
-        cout << pile.top() << endl;
-        pile.pop();
-        i++;
-    }*/
 
     cout << atab<<endl;
     cout << btab<< endl;
