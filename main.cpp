@@ -42,29 +42,26 @@ void exercise_1_deque_list(){
     }
     cout << endl;
 }
-
-int main([[maybe_unused]] int argc, [[maybe_unused]] char const* argv[])
-{
-    // exercise 1 question 3
-    /*priority_queue<string> mots;
+void exercise_1_priority_list(){
+    priority_queue<string> mots;
     string a;
     getline(std::cin, a);
     split(mots, a);
     while (! mots.empty() ) {
         cout << mots.top() << "\n";
         mots.pop();
-    }*/
+    }
+}
 
-
-    // exercise 1 question 2
-    /*string a;
+void exercise_1_palindrome(){
+    string a;
     cin.clear();
 
-    int compteur =0;
+    int compteur;
     getline(std::cin, a);
     cout << a.length() <<endl;
     compteur=std::count_if(a.begin(), a.end(),
-                             [](unsigned char c){ return (!std::isspace(c)); } // correct
+                           [](unsigned char c){ return (!std::isspace(c)); } // correct
     );
     auto atab = new char[compteur];
     cout << compteur<<endl;
@@ -101,6 +98,9 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char const* argv[])
     }
     delete[] atab;
     delete[] btab;
+}
+int main(int argc, char const* argv[])
+{
 
-    return 0;*/
+    return 0;
 }
