@@ -2,6 +2,7 @@
 #include <sstream>
 #include <cctype>
 #include <deque>
+#include <queue>
 #include <list>
 #include <iterator>
 #include <stack>
@@ -14,6 +15,14 @@ void split(deque<string> &tokens,const string& s)
     string word;
     while (ss >> word) {
         tokens.push_back(word);
+    }
+}
+void split(priority_queue<string> &tokens,const string& s)
+{
+    std::stringstream ss(s);
+    string word;
+    while (ss >> word) {
+        tokens.push(word);
     }
 }
 
@@ -36,7 +45,19 @@ void exercise_1_deque_list(){
 
 int main([[maybe_unused]] int argc, [[maybe_unused]] char const* argv[])
 {
+    // exercise 1 question 3
+    /*priority_queue<string> mots;
     string a;
+    getline(std::cin, a);
+    split(mots, a);
+    while (! mots.empty() ) {
+        cout << mots.top() << "\n";
+        mots.pop();
+    }*/
+
+
+    // exercise 1 question 2
+    /*string a;
     cin.clear();
 
     int compteur =0;
@@ -81,5 +102,5 @@ int main([[maybe_unused]] int argc, [[maybe_unused]] char const* argv[])
     delete[] atab;
     delete[] btab;
 
-    return 0;
+    return 0;*/
 }
