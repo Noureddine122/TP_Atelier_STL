@@ -78,6 +78,12 @@ build CMakeFiles/AtelierSTL.dir/main.cpp.o: CXX_COMPILER__AtelierSTL_Debug /home
   OBJECT_DIR = CMakeFiles/AtelierSTL.dir
   OBJECT_FILE_DIR = CMakeFiles/AtelierSTL.dir
 
+build CMakeFiles/AtelierSTL.dir/Exercise_1.cpp.o: CXX_COMPILER__AtelierSTL_Debug /home/noureddine/CLionProjects/AtelierSTL/Exercise_1.cpp || cmake_object_order_depends_target_AtelierSTL
+  DEP_FILE = CMakeFiles/AtelierSTL.dir/Exercise_1.cpp.o.d
+  FLAGS = -g -std=gnu++23
+  OBJECT_DIR = CMakeFiles/AtelierSTL.dir
+  OBJECT_FILE_DIR = CMakeFiles/AtelierSTL.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target AtelierSTL
@@ -86,7 +92,7 @@ build CMakeFiles/AtelierSTL.dir/main.cpp.o: CXX_COMPILER__AtelierSTL_Debug /home
 #############################################
 # Link the executable AtelierSTL
 
-build AtelierSTL: CXX_EXECUTABLE_LINKER__AtelierSTL_Debug CMakeFiles/AtelierSTL.dir/main.cpp.o
+build AtelierSTL: CXX_EXECUTABLE_LINKER__AtelierSTL_Debug CMakeFiles/AtelierSTL.dir/main.cpp.o CMakeFiles/AtelierSTL.dir/Exercise_1.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/AtelierSTL.dir
   POST_BUILD = :
